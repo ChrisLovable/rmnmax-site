@@ -24,19 +24,14 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-40 w-full transition-all duration-300 ${
-        scrolled
-          ? "bg-navy/95 shadow-lg backdrop-blur-sm"
-          : "bg-navy/0 backdrop-blur-0"
+      className={`sticky top-0 z-40 w-full bg-navy transition-shadow duration-300 ${
+        scrolled ? "shadow-lg" : ""
       }`}
     >
       <nav className="container-px mx-auto flex h-16 max-w-7xl items-center justify-between sm:h-20">
         <Link href="/" className="flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-accent text-base font-bold text-white">
-            R
-          </span>
           <span className="text-lg font-bold text-white sm:text-xl">
-            RMN<span className="text-accent">Max</span>
+            RMNMax
           </span>
         </Link>
 
